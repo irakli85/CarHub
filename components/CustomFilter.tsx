@@ -21,7 +21,7 @@ const CustomFilter = ({title, options}: CustomFilterProps) => {
     <div className='w-fit'>
       <Listbox 
       value={selected} 
-      onChange={(e) => {
+      onChange={(e:any) => {
           setSelected(e);
           handleUpdateParams(e);
         }}>
