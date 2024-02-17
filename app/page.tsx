@@ -73,7 +73,7 @@ export default function Home() {
               </div>
               { loading && (
                 <div className="mt-16 w-full flex-center">
-                  <Image src='/loader.svg' alt="loader" width={50} height={50} className="object-contain"/>
+                  <Image src='/loader.gif' alt="loader" width={50} height={50} className="object-contain"/>
                 </div>
               )}
               <ShowMore pageNumber = {limit / 10} isNext={limit > allCars.length} setLimit={setLimit}/>
@@ -81,7 +81,7 @@ export default function Home() {
           ) : (
             <div className="home__error-container">
               <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-              <p>{allCars?.message}</p>
+              {/* <p>{allCars?.message}</p> */}
             </div>
           )
         }
